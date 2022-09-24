@@ -174,13 +174,14 @@ function ViewEmployees() {
                     Role
                   </option>
                   {role.map((value, index) => {
-                    if (value.employee_role != null) {
+                    if (value.employee_role !== null) {
                       return (
                         <option value={value.employee_role}>
                           {value.employee_role}
                         </option>
                       );
                     }
+                    return <></>
                   })}
                 </select>
                 <select
@@ -193,13 +194,14 @@ function ViewEmployees() {
                     Country
                   </option>
                   {country.map((value, index) => {
-                    if (value.employee_country != null) {
+                    if (value.employee_country !== null) {
                       return (
                         <option value={value.employee_country}>
                           {value.employee_country}
                         </option>
                       );
                     }
+                    return <></>
                   })}
                 </select>
                 <select
@@ -212,13 +214,14 @@ function ViewEmployees() {
                     City
                   </option>
                   {city.map((value, index) => {
-                    if (value.employee_city != null) {
+                    if (value.employee_city !== null) {
                       return (
                         <option value={value.employee_city}>
                           {value.employee_city}
                         </option>
                       );
                     }
+                    return <></>
                   })}
                 </select>
                 <select
@@ -231,13 +234,14 @@ function ViewEmployees() {
                     Province
                   </option>
                   {province.map((value, index) => {
-                    if (value.employee_province != null) {
+                    if (value.employee_province !== null) {
                       return (
                         <option value={value.employee_province}>
                           {value.employee_province}
                         </option>
                       );
                     }
+                    return <></>
                   })}
                 </select>
                 <select
