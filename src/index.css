@@ -1,0 +1,90 @@
+.vwMainContainer{
+  width: 100%;
+}
+
+.vwContainer{
+  width: 100%;
+}
+
+.vwEmpDetail{
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+  border: 1px solid #c4c4c4;
+  margin: 6px;
+}
+
+.vwEmpBox{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  border-right: 1px solid #c4c4c4;
+  text-align: center;
+}
+
+.vwtext{
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.vhBgGray{
+  background: #ececec;
+}
+
+.vwdetailsText{
+  font-size: 14px;
+    font-weight: 300;
+    color: #111;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+.vwForm{
+  margin: 35px 10px;
+  width: auto;
+}
+
+.vwInput{
+  outline: none;
+  padding: 6px 5px;
+  background-color: #ffffff;
+  border: 2px solid #489dd6;
+  width: 160px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.vwSubmitBtn{
+  padding: 6px 25px;
+  cursor: pointer;
+  color: #ffffff;
+  margin-right: 10px;
+    border-radius: 5px;
+    background: linear-gradient(122.33deg, #68bed1 30.62%, #1e94e9 100%);
+    font-size: 16px;
+    transition: all 0.3s linear;
+}
+
+
+.vwSubContainer{
+  margin: 15px 0px;
+}
+

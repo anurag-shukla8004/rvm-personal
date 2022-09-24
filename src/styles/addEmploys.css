@@ -1,0 +1,57 @@
+.mainConatainer{
+  display: flex;
+}
+
+.AeMainContainer{
+  margin: 70px;
+}
+
+.rightForm{
+  margin: 20px;
+}
+
+.leftForm{
+  margin: 20px;
+}
+
+.AeForm{
+  display: flex;
+}
+
+.AeFormContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.AeInput{
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: #f6f6f6;
+  width: 400px;
+}
+
+.AeInputBox{
+  margin: 30px 0px;
+    width: 100%;
+}
+
+.AeEmployTitle{
+  margin: 20px;
+    font-weight: 700;
+    font-size: 35px;
+}
+.AeEmployTitle span{
+  color: #489dd6;
+}
+
+.AeSubmitBtn{
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: linear-gradient(122.33deg, #68bed1 30.62%, #1e94e9 100%);
+ margin: 25px;
+  font-size: 16px;
+  transition: all 0.3s linear;
+  width: 200px;
+}
