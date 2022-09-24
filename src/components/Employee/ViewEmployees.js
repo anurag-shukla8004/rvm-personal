@@ -31,17 +31,17 @@ function ViewEmployees() {
     e.preventDefault();
     console.log('values--valCopy->',valCopy)
     if (
-      employee_role == '' &&
-      employee_city == '' &&
-      employee_country == '' &&
-      is_active == '' &&
-      employee_province == ''
+      employee_role === '' &&
+      employee_city === '' &&
+      employee_country === '' &&
+      is_active === '' &&
+      employee_province === ''
     ) {
       setValCopy(val)
     } else {
       const filterObj = Object.fromEntries(Object.entries(values).filter(([_, v]) => v != ""));
       const resultFilterArr = val.filter(ele => 
-        Object.keys(filterObj).every(singleKey => ele[singleKey]?.toString() == filterObj[singleKey]))
+        Object.keys(filterObj).every(singleKey => ele[singleKey]?.toString() === filterObj[singleKey]))
       console.log('resultFilterArr filterObj', filterObj)
       console.log('resultFilterArr', resultFilterArr)
       setValCopy(resultFilterArr)
@@ -152,7 +152,7 @@ function ViewEmployees() {
   }
 
   console.log('cl---', values)
-  return emp == '' ? (
+  return emp === '' ? (
     <h1>Loading...</h1>
   ) : (
     <div>
@@ -309,7 +309,7 @@ function ViewEmployees() {
                   </div>
                   <div className="vwEmpBox">
                     <span className="vwdetailsText">
-                      {value.is_active == true ? 'Active' : 'Unactive'}
+                      {value.is_active === true ? 'Active' : 'Unactive'}
                     </span>
                   </div>
                   <div className="vwEmpBox">

@@ -26,27 +26,6 @@ function AddEmployeesPage() {
     employee_nok_email: "",
     employee_role: "",
   });
-  const [error, setError] = useState({
-    password: null,
-    err_employee_email: "",
-    err_employee_fullname: "",
-    err_employee_familyname: "",
-    err_employee_officephoneno: "",
-    err_employee_mobileno: "",
-    err_employee_rfid: "",
-    err_employee_country: "",
-    err_employee_province: "",
-    err_employee_city: "",
-    err_employee_district: "",
-    err_employee_subdistrict: "",
-    err_employee_street: "",
-    err_employee_unitno: "",
-    err_employee_zipcode: "",
-    err_employee_ok_name: "",
-    err_employee_nok_contactno: "",
-    err_employee_nok_email: "",
-    err_employee_role: "",
-  });
   const [passowrdError, setPassowrdError] = useState(null);
   const [mobileError, setMobileError] = useState(null);
   const [roleError, setRoleError] = useState(null);

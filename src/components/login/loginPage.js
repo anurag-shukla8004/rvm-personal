@@ -12,7 +12,6 @@ function Login() {
     password: "",
   });
   const [emailError, setEmailError] = useState(null);
-  const [passwordError, setPasswordError] = useState(null);
 
   // Form handling -----
   const { username, password } = values;
