@@ -39,7 +39,7 @@ function ViewEmployees() {
     ) {
       setValCopy(val)
     } else {
-      const filterObj = Object.fromEntries(Object.entries(values).filter(([_, v]) => v != ""));
+      const filterObj = Object.fromEntries(Object.entries(values).filter(([_, v]) => v !== ""));
       const resultFilterArr = val.filter(ele => 
         Object.keys(filterObj).every(singleKey => ele[singleKey]?.toString() === filterObj[singleKey]))
       console.log('resultFilterArr filterObj', filterObj)
