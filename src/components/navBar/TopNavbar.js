@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-function TopNavbar() {
+function TopNavbar(props) {
 
   return (
     <>
@@ -13,7 +13,7 @@ function TopNavbar() {
       </Link>
       <div className="navbar-content">
         <div className="d-flex align-items-center">
-          <h2 className="page-title">Dashboard</h2>
+          <h2 className="page-title">{props.title}</h2>
         </div>
         <form className="search-form">
           <div className="input-group">

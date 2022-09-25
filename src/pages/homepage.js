@@ -10,7 +10,7 @@ function Homepage() {
   return (
     <div style={{ display: "flex" }}>
       <SideNav />
-      <NavBar />
+      <NavBar title="Dashbord"/>
       <Dashbord />
     </div>
   );

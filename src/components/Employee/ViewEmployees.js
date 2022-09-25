@@ -1,3 +1,4 @@
+import { format, parseISO } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 
 function ViewEmployees() {
@@ -173,7 +174,7 @@ function ViewEmployees() {
                   <option value="" disabled selected>
                     Role
                   </option>
-                  {role.map((value, index) => {
+                  {role?.map((value, index) => {
                     if (value.employee_role !== null) {
                       return (
                         <option value={value.employee_role}>
@@ -193,7 +194,7 @@ function ViewEmployees() {
                   <option value="" disabled selected>
                     Country
                   </option>
-                  {country.map((value, index) => {
+                  {country?.map((value, index) => {
                     if (value.employee_country !== null) {
                       return (
                         <option value={value.employee_country}>
@@ -213,7 +214,7 @@ function ViewEmployees() {
                   <option value="" disabled selected>
                     City
                   </option>
-                  {city.map((value, index) => {
+                  {city?.map((value, index) => {
                     if (value.employee_city !== null) {
                       return (
                         <option value={value.employee_city}>
@@ -233,7 +234,7 @@ function ViewEmployees() {
                   <option value="" disabled selected>
                     Province
                   </option>
-                  {province.map((value, index) => {
+                  {province?.map((value, index) => {
                     if (value.employee_province !== null) {
                       return (
                         <option value={value.employee_province}>
@@ -295,7 +296,7 @@ function ViewEmployees() {
               </div>
             </div>
             {valCopy?.map((value, index) => {
-              // const date = parseISO(value?.created_at);
+              const date = parseISO(value?.created_at);
               return (
                 <div className="vwEmpDetail vhBgGray">
                   <div style={{ width: '5%' }} className="vwEmpBox">
@@ -334,9 +335,9 @@ function ViewEmployees() {
                   <div className="vwEmpBox">
                     <span className="vwdetailsText">
                       {' '}
-                      {/* <time className="vwdetailsText">
+                      <time className="vwdetailsText">
                         {format(date, 'LLLL	d, yyyy')}
-                      </time> */}
+                      </time>
                     </span>
                   </div>
                   <div style={{ width: '18%' }} className="vwEmpBox">

@@ -123,6 +123,7 @@ function AddEmployeesPage() {
         );
         console.log(response, "response");
         if (response.status === 200) {
+          console.log(values)
           alert("Employee added successfully");
           setValues({
             password: "",

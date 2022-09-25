@@ -6648,7 +6648,7 @@ div.tox .btn-group-vertical > .btn-group:not(:first-child) > .tox-button,
 }
 
 .overflow-hidden {
-  overflow: hidden !important;
+  overflow: auto !important;
 }
 
 .overflow-visible {
