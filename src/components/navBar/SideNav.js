@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function SideNav() {
   return (
@@ -6,7 +7,7 @@ function SideNav() {
       {/* partial:partials/_sidebar.html */}
   <nav className="sidebar">
     <div className="sidebar-header">
-      <a href="#" className="sidebar-brand">
+      <a href="/homePage" className="sidebar-brand">
         <img src="assets/images/logo.jpg" width="100%" alt="" />
       </a>
       <div className="sidebar-toggler not-active">
@@ -18,7 +19,7 @@ function SideNav() {
     <div className="sidebar-body">
       <ul className="nav">
         <li className="nav-item">
-          <a href="homePage" className="nav-link">
+          <a href="/homePage" className="nav-link">
             <i className="fa fa-home" />
             <span className="link-title">Dashboard</span>
           </a>
@@ -39,29 +40,29 @@ function SideNav() {
           <div className="collapse" id="MachineMgmt">
             <ul className="nav sub-menu">
               <li className="nav-item">
-                <a href="ListView.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   List View
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="MapView.html" className="nav-link">
+                <Link  to="/cons" className="nav-link">
                   Map View
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="AddMachines.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   Add/Update Machines
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="HeartBeats.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   HeartBeats
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="MaintenanceRecords.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   Maintenance Records
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -82,14 +83,14 @@ function SideNav() {
           <div className="collapse" id="Employee">
             <ul className="nav sub-menu">
               <li className="nav-item">
-                <a href="viewEmployees" className="nav-link">
+                <Link to="/viewEmployees" className="nav-link">
                   View Employees
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="addEmployees" className="nav-link">
+                <Link to="/addEmployees" className="nav-link">
                   Add/Update Employees
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -110,24 +111,24 @@ function SideNav() {
           <div className="collapse" id="PartnerMgmt">
             <ul className="nav sub-menu">
               <li className="nav-item">
-                <a href="ViewWastePickers.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   View Waste Pickers
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="AddWastePickers.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   Add Waste Pickers
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="ViewRedemption.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   View Redemption
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="AddRedemption.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   Add/Update Redemption{" "}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -148,14 +149,14 @@ function SideNav() {
           <div className="collapse" id="BarCode">
             <ul className="nav sub-menu">
               <li className="nav-item">
-                <a href="ViewallEAN.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   View all EAN
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="AddEAN.html" className="nav-link">
+                <Link to="/cons" className="nav-link">
                   Add/Update EAN
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

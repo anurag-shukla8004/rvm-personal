@@ -5,6 +5,7 @@ import {
   Routes
 } from 'react-router-dom';
 import AddEmployees from '../pages/AddEmployees';
+import Cons from '../pages/construction';
 import HomePage from '../pages/homepage';
 import Login from '../pages/login';
 import ViewEmployees from '../pages/viewEmployees';
@@ -17,6 +18,7 @@ function Myrouter() {
       <Route exact path="/homePage" element={<HomePage />} />
       <Route exact path="/AddEmployees" element={<AddEmployees />} />
       <Route exact path="/viewEmployees" element={<ViewEmployees />} />
+      <Route exact path="/cons" element={<Cons />} />
     </Routes>
   </Router>
   )

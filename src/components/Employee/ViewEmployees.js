@@ -87,14 +87,14 @@ function ViewEmployees() {
 
   const country = emp?.employee?.filter((element) => {
     let isDuplicateCountry;
-    if (element.employee_country != null) {
+    if (element.employee_country !== null) {
       isDuplicateCountry = uniqueCountry.includes(
         element.employee_country.toUpperCase()
       );
     }
 
     if (!isDuplicateCountry) {
-      if (element.employee_country != null) {
+      if (element.employee_country !== null) {
         uniqueCountry.push(element.employee_country.toUpperCase());
       }
 
@@ -105,14 +105,14 @@ function ViewEmployees() {
 
   const city = emp?.employee?.filter((element) => {
     let isDuplicateCity;
-    if (element.employee_city != null) {
+    if (element.employee_city !== null) {
       isDuplicateCity = uniqueCity.includes(
         element.employee_city.toUpperCase()
       );
     }
 
     if (!isDuplicateCity) {
-      if (element.employee_city != null) {
+      if (element.employee_city !== null) {
         uniqueCity.push(element.employee_city.toUpperCase());
       }
 
@@ -123,14 +123,14 @@ function ViewEmployees() {
 
   const province = emp?.employee?.filter((element) => {
     let isDuplicateProvince;
-    if (element.employee_province != null) {
+    if (element.employee_province !== null) {
       isDuplicateProvince = uniqueProvince.includes(
         element.employee_province.toUpperCase()
       );
     }
 
     if (!isDuplicateProvince) {
-      if (element.employee_province != null) {
+      if (element.employee_province !== null) {
         uniqueProvince.push(element.employee_province.toUpperCase());
       }
 

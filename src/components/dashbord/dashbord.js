@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 
 function Dashbord() {
@@ -53,10 +54,10 @@ function Dashbord() {
                       placeholder="Search..."
                       aria-label="Search..."
                     />
-                    <a href="#" className="btn btn-primary btn-search">
+                    <Link to="#" className="btn btn-primary btn-search">
                       {" "}
                       <i className="fa fa-search" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -266,18 +267,18 @@ function Dashbord() {
                         Country <span className="caret" />
                       </button>
                       <div className="dropdown-menu" role="menu">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="#">
                           Country
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           Province
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           District
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           City
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -320,18 +321,18 @@ function Dashbord() {
                         Country <span className="caret" />
                       </button>
                       <div className="dropdown-menu" role="menu">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="#">
                           Country
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           Province
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           District
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           City
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -378,18 +379,18 @@ function Dashbord() {
                         Country <span className="caret" />
                       </button>
                       <div className="dropdown-menu" role="menu">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="#">
                           Country
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           Province
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           District
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           City
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -432,18 +433,18 @@ function Dashbord() {
                         Country <span className="caret" />
                       </button>
                       <div className="dropdown-menu" role="menu">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="#">
                           Country
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           Province
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           District
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           City
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -490,18 +491,18 @@ function Dashbord() {
                         Country <span className="caret" />
                       </button>
                       <div className="dropdown-menu" role="menu">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="#">
                           Country
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           Province
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           District
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           City
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -544,18 +545,18 @@ function Dashbord() {
                         Country <span className="caret" />
                       </button>
                       <div className="dropdown-menu" role="menu">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="#">
                           Country
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           Province
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           District
-                        </a>
-                        <a className="dropdown-item" href="#">
+                        </Link>
+                        <Link className="dropdown-item" to="#">
                           City
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -574,6 +575,7 @@ function Dashbord() {
                 <div className="mapouter">
                   <div className="gmap_canvas">
                     <iframe
+                      title='iframe1'
                       className="gmap_iframe"
                       width="100%"
                       frameBorder={0}
@@ -582,7 +584,7 @@ function Dashbord() {
                       marginWidth={0}
                       src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Indonesia&t=p&z=8&ie=UTF8&iwloc=B&output=embed"
                     />
-                    <a href="https://mcpenation.com/">MCPE Nation</a>
+                    <Link to="#">MCPE Nation</Link>
                   </div>
                   <style
                     dangerouslySetInnerHTML={{
