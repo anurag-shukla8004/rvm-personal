@@ -58,9 +58,10 @@ function Login() {
 
   return (
     <div className=" flex-r loginContainer">
+      
       <div className="headingLogo">
         <div>
-          <img className="loginLogo" src="assets/images/logo.jpg"></img>
+          <img className="loginLogo" alt='logo1' src="assets/images/logo.jpg"></img>
         </div>
         <div>
           <h1 className="loginTitile">WELCOME TO RVM</h1>

@@ -8,7 +8,7 @@ function SideNav() {
   <nav className="sidebar">
     <div className="sidebar-header">
       <a href="/homePage" className="sidebar-brand">
-        <img src="assets/images/logo.jpg" width="100%" alt="" />
+        <img src="assets/images/logo.jpg" width="100%" alt="logo" />
       </a>
       <div className="sidebar-toggler not-active">
         <span />
@@ -19,10 +19,10 @@ function SideNav() {
     <div className="sidebar-body">
       <ul className="nav">
         <li className="nav-item">
-          <a href="/homePage" className="nav-link">
+          <Link to="/homePage" className="nav-link">
             <i className="fa fa-home" />
             <span className="link-title">Dashboard</span>
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <a

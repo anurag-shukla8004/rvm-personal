@@ -1,13 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function TopNavbar() {
+
   return (
     <>
       {/* partial:partials/_navbar.html */}
     <nav className="navbar">
-      <a href="#" className="sidebar-toggler">
+      <Link to="#" className="sidebar-toggler">
         <i data-feather="menu" />
-      </a>
+      </Link>
       <div className="navbar-content">
         <div className="d-flex align-items-center">
           <h2 className="page-title">Dashboard</h2>
@@ -27,9 +30,9 @@ function TopNavbar() {
         </form>
         <ul className="navbar-nav">
           <li className="nav-item dropdown">
-            <a
+            <Link
               className="nav-link dropdown-toggle"
-              href="#"
+              to="#"
               id="notificationDropdown"
               role="button"
               data-bs-toggle="dropdown"
@@ -40,20 +43,20 @@ function TopNavbar() {
               <div className="indicator">
                 <div className="circle" />
               </div>
-            </a>
+            </Link>
             <div
               className="dropdown-menu p-0"
               aria-labelledby="notificationDropdown"
             >
               <div className="px-3 py-2 d-flex align-items-center justify-content-between border-bottom">
                 <p>6 New Notifications</p>
-                <a href="javascript:;" className="text-muted">
+                <Link to="/cons" className="text-muted">
                   Clear all
-                </a>
+                </Link>
               </div>
               <div className="p-1">
-                <a
-                  href="javascript:;"
+                <Link
+                  to="/cons"
                   className="dropdown-item d-flex align-items-center py-2"
                 >
                   <div className="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
@@ -63,9 +66,9 @@ function TopNavbar() {
                     <p>New Order Recieved</p>
                     <p className="tx-12 text-muted">30 min ago</p>
                   </div>
-                </a>
-                <a
-                  href="javascript:;"
+                </Link>
+                <Link
+                  to="/cons"
                   className="dropdown-item d-flex align-items-center py-2"
                 >
                   <div className="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
@@ -78,9 +81,9 @@ function TopNavbar() {
                     <p>Server Limit Reached!</p>
                     <p className="tx-12 text-muted">1 hrs ago</p>
                   </div>
-                </a>
-                <a
-                  href="javascript:;"
+                </Link>
+                <Link
+                  to="/cons"
                   className="dropdown-item d-flex align-items-center py-2"
                 >
                   <div className="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
@@ -94,9 +97,9 @@ function TopNavbar() {
                     <p>New customer registered</p>
                     <p className="tx-12 text-muted">2 sec ago</p>
                   </div>
-                </a>
-                <a
-                  href="javascript:;"
+                </Link>
+                <Link
+                  to="/cons"
                   className="dropdown-item d-flex align-items-center py-2"
                 >
                   <div className="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
@@ -106,9 +109,9 @@ function TopNavbar() {
                     <p>Apps are ready for update</p>
                     <p className="tx-12 text-muted">5 hrs ago</p>
                   </div>
-                </a>
-                <a
-                  href="javascript:;"
+                </Link>
+                <Link
+                  to="/cons"
                   className="dropdown-item d-flex align-items-center py-2"
                 >
                   <div className="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
@@ -118,17 +121,17 @@ function TopNavbar() {
                     <p>Download completed</p>
                     <p className="tx-12 text-muted">6 hrs ago</p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="px-3 py-2 d-flex align-items-center justify-content-center border-top">
-                <a href="javascript:;">View all</a>
+                <Link to="/cons">View all</Link>
               </div>
             </div>
           </li>
           <li className="nav-item dropdown">
-            <a
+            <Link
               className="nav-link dropdown-toggle"
-              href="#"
+              to="#"
               id="profileDropdown"
               role="button"
               data-bs-toggle="dropdown"
@@ -140,7 +143,7 @@ function TopNavbar() {
                 src="https://via.placeholder.com/30x30"
                 alt="profile"
               />
-            </a>
+            </Link>
             <div
               className="dropdown-menu p-0"
               aria-labelledby="profileDropdown"
@@ -160,25 +163,25 @@ function TopNavbar() {
               </div>
               <ul className="list-unstyled p-1">
                 <li className="dropdown-item py-2">
-                  <a
-                    href="pages/general/profile.html"
+                  <Link
+                    to="pages/general/profile.html"
                     className="text-body ms-0"
                   >
                     <i className="me-2 icon-md" data-feather="user" />
                     <span>Profile</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="dropdown-item py-2">
-                  <a href="javascript:;" className="text-body ms-0">
+                  <Link to="/cons" className="text-body ms-0">
                     <i className="me-2 icon-md" data-feather="edit" />
                     <span>Edit Profile</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="dropdown-item py-2">
-                  <a href="javascript:;" className="text-body ms-0">
+                  <Link to="/cons" className="text-body ms-0">
                     <i className="me-2 icon-md" data-feather="log-out" />
                     <span>Log Out</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
